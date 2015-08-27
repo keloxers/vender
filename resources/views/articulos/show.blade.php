@@ -4,7 +4,7 @@
 
         <div id="page_heading">
             <h1>{!! $articulo->articulo !!}</h1>
-            <div class="fb-like"></div>
+            <div class="fb-like"></div><br>
             <span class="uk-text-muted uk-text-upper uk-text-small">Code: {!! $articulo->url !!}</span>
         </div>
         <div id="page_content_inner">

@@ -75,7 +75,7 @@
 
                                     </div>
                                     <div class="user_heading_content">
-                                        <h2 class="heading_b uk-margin-bottom"><span class="uk-text-truncate">Usuario: {{ App\User::find($articulo->users_id)->name }}</span><span class="sub-heading">{{App\User::find($articulo->users_id)->telefono}}</span></h2>
+                                        <h2 class="heading_b uk-margin-bottom"><span class="uk-text-truncate">Usuario: {{ App\User::find($articulo->users_id)->name }}</span><span class="sub-heading">Telefono: {{App\User::find($articulo->users_id)->telefono}}</span></h2>
                                         <ul class="user_stats">
                                             <li>
                                                 <h4 class="heading_a">0 <span class="sub-heading">Publicados</span></h4>
@@ -88,9 +88,6 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <a class="md-fab md-fab-small md-fab-accent" href="/perfil">
-                                        <i class="material-icons">&#xE150;</i>
-                                    </a>
                                 </div>
                             </div>
                         </div>

@@ -110,7 +110,7 @@
                     <div class="md-card">
                         <div class="md-card-toolbar">
                             <h3 class="md-card-toolbar-heading-text">
-                                Preguntas
+                                Comentarios y Preguntas
                             </h3>
                         </div>
                         <div class="fb-comments" data-href="http://vendo.virasorovirtual.com/articulos/{!! $articulo->url !!}" data-numposts="15"></div>

@@ -113,7 +113,7 @@
                                 Comentarios y Preguntas
                             </h3>
                         </div>
-                        <div class="fb-comments" data-href="http://vendo.virasorovirtual.com/articulos/{!! $articulo->url !!}" data-numposts="15"></div>
+                        <div class="fb-comments" data-href="http://vendo.virasorovirtual.com/articulos/{!! $articulo->url !!}" data-width="600" data-numposts="15"></div>
                     </div>
                 </div>
             </div>

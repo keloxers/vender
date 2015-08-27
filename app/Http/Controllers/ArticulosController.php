@@ -299,7 +299,10 @@ class ArticulosController extends Controller
 
               $articulo->save();
 
-              $articulos = Articulo::all();
+              $articulos = Articulo::where('users_id', Auth::user()->id)
+                               ->orderBy('created_at', 'desc')
+                               ->paginate(20);
+
               return view('articulos.index', ['articulos' => $articulos]);
 
 

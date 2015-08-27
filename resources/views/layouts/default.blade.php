@@ -63,6 +63,7 @@
                               <div class="uk-dropdown uk-dropdown-small uk-dropdown-flip">
                                   <ul class="uk-nav js-uk-prevent">
                                       <li><a href="/login">Ingresar</a></li>
+                                      <li><a href="/register">Registrarse</a></li>
                                   </ul>
                               </div>
                           </li>

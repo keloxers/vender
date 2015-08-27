@@ -96,7 +96,7 @@
 
 
                                             <td class="uk-text-nowrap">
-                                                <a href="/articulos/{{$articulo->url}}/edit"><i class="material-icons md-24">&#xE8F4;</i></a>
+                                                <a href="/articulos/{{$articulo->url}}/edit"><i class="material-icons md-24">&#xE8F4;</i> Editar</a>
                                             </td>
                                         </tr>
                                     @endforeach

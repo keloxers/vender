@@ -106,4 +106,13 @@ class PerfilController extends Controller
     {
         //
     }
+
+    public function ayuda()
+    {
+
+        return view('layouts.ayuda');
+
+    }
+
+
 }

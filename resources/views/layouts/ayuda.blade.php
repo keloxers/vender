@@ -146,9 +146,26 @@ if (Auth::user()->telefono=="") {
 }
 
 ?>
-				@yield('content')
 
-    </div>
+
+
+  <div id="page_content_inner">
+      <div class="uk-grid" data-uk-grid-margin data-uk-grid-match id="user_profile">
+          <div class="uk-width-large-10-10">
+              <div class="md-card">
+                <div class="md-card-content">
+                  <h1> Ayuda</h1>
+                  <br>
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/l7RCasOS7Ko" frameborder="0" allowfullscreen></iframe>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
 
     <!-- google web fonts -->
     <script>

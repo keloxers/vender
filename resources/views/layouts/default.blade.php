@@ -116,6 +116,10 @@
                 <li>
                     <a href="/c/{{$clasificadoscategoria->url}}">
                       {{$clasificadoscategoria->clasificadoscategoria}}
+                      <?php
+                          $count = App\Articulo::where('clasificadoscategorias_id', $clasificadoscategoria->id)->where('activo', 1)->count();
+                      ?>
+                      ({{$count}})
                     </a>
                 </li>
             @endforeach

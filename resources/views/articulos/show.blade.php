@@ -79,13 +79,13 @@
                                         <h2 class="heading_b uk-margin-bottom"><span class="uk-text-truncate">Usuario: {{ App\User::find($articulo->users_id)->name }}</span><span class="sub-heading">Telefono: {{App\User::find($articulo->users_id)->telefono}}</span></h2>
                                         <ul class="user_stats">
                                             <li>
-                                                <h4 class="heading_a">0 <span class="sub-heading">Publicados</span></h4>
+                                                <h4 class="heading_a">{!! $cargados !!} <span class="sub-heading">Cargados</span></h4>
                                             </li>
                                             <li>
-                                                <h4 class="heading_a">0 <span class="sub-heading">Cancelados</span></h4>
+                                                <h4 class="heading_a">{!! $publicados !!} <span class="sub-heading">Publicados</span></h4>
                                             </li>
                                             <li>
-                                                <h4 class="heading_a">0 <span class="sub-heading">Vendidos</span></h4>
+                                                <h4 class="heading_a">{!! $articulo->visitas !!} <span class="sub-heading">Visitas</span></h4>
                                             </li>
                                         </ul>
                                     </div>

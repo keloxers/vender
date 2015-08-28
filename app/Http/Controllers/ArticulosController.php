@@ -155,15 +155,24 @@ class ArticulosController extends Controller
                            ->first();
           if ($articulo) {
 
+            $id = $articulo->id;
+            $articulo = Articulo::find($id);
+
+            $articulo->visitas = $articulo->visitas + 1;
+
+            $articulo->save();
+
             $cargados = Articulo::where('users_id', $articulo->users_id)->get();
             $cargados = count($cargados);
 
-            $cargados = Articulo::where('users_id', $articulo->users_id)
-                                ->where('users_id', $articulo->users_id)
+            $publicados = Articulo::where('users_id', $articulo->users_id)
+                                ->where('activo', 1)
                                 ->get();
-            $cargados = count($cargados);
+            $publicados = count($publicados);
 
-            return view('articulos.show', ['articulo' => $articulo, 'cargados' => $cargados]);
+
+
+            return view('articulos.show', ['articulo' => $articulo, 'cargados' => $cargados, 'publicados' => $publicados]);
           }
 
 

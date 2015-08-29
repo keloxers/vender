@@ -19,10 +19,10 @@
     <!-- altair admin -->
     <link rel="stylesheet" href="/assets/css/main.min.css" media="all">
 
-    <!-- METAS FACEBOOK -->
-    <meta content='{{$articulo->articulo}}' property='og:title'/>
-    <meta content='http://vender.virasorovirtual.com/uploads/big/{{$articulo->url_foto}}' property='og:image'/>
-    <meta content='Mira este clasificado ingresa en http://vender.virasorovirtual.com/articulos/{{$articulo->url}}' property='og:description'/>    
+    <!-- FACEBOOK -->
+    <meta expr:content='{{$articulo->articulo}}' property='og:title'/>
+    <meta expr:content='http://vender.virasorovirtual.com/uploads/big/{{$articulo->url_foto}}' property='og:image'/>
+    <meta expr:content='Mira este clasificado ingresa en http://vender.virasorovirtual.com/articulos/{{$articulo->url}}' property='og:description'/>
 
 </head>
 <div id="fb-root"></div>

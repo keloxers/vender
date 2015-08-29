@@ -11,7 +11,7 @@
                           <i class="md-icon material-icons md-icon-light">&#xE5D4;</i>
                           <div class="uk-dropdown uk-dropdown-flip uk-dropdown-small">
                               <ul class="uk-nav">
-                                  <li><a href="#">Action 1</a></li>
+                                  <li><a href="/perfil">Editar perfil</a></li>
                               </ul>
                           </div>
                       </div>
@@ -48,8 +48,9 @@
 
 
             <div class="md-card">
-
+                <a class="md-btn md-btn-success" href="/articulos/create">Agregar nuevo clasificado</a>
                 <div class="md-card-content">
+
                   <div class="user_heading_content">
                     <div class="uk-grid" data-uk-grid-margin>
                         <div class="uk-width-1-1">

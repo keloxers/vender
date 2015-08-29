@@ -19,8 +19,10 @@
     <!-- altair admin -->
     <link rel="stylesheet" href="/assets/css/main.min.css" media="all">
 
+
+    <link rel="stylesheet" href="/css/lightbox.css">
+
     <!-- FACEBOOK -->
-    
     <meta content='{{$articulo->articulo}}' property='og:title'/>
     <meta content='http://vender.virasorovirtual.com/uploads/crop/{{$articulo->url_foto}}' property='og:image'/>
     <meta content='Mira este clasificado ingresa en http://vender.virasorovirtual.com/articulos/{{$articulo->url}}.' property='og:description'/>
@@ -185,7 +187,10 @@ if (Auth::user()->telefono=="") {
                         </div>
                         <div class="md-card-content">
                             <div class="uk-margin-bottom uk-text-center">
-                                <img src="
+
+                            <a class="example-image-link" href="/uploads/big/{{$articulo->url_foto}}" data-lightbox="example-1">
+
+                                <img class="example-image" src="
                                     <?php
                                     if ($articulo->url_foto=="") {
                                       echo "/images/sinfoto.jpg";
@@ -194,6 +199,8 @@ if (Auth::user()->telefono=="") {
                                     }
                                     ?>
                                 " alt="" class="img_medium" />
+
+                                </a>
                             </div>
 
                         </div>
@@ -328,6 +335,8 @@ if (Auth::user()->telefono=="") {
                     altair_helpers.retina_images();
                 });
             </script>
+
+            <script src="/js/lightbox-plus-jquery.min.js"></script>
 
         </body>
         </html>

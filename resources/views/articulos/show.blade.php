@@ -4,7 +4,7 @@
 
         <div id="page_heading">
             <h1>{!! $articulo->articulo !!}</h1>
-            <div class="fb-like"></div><div class="fb-share-button" data-href="https://vender.virasorovirtual.com/articulos/{!! $articulo->url !!}" data-layout="button_count"></div><br>
+            <div class="fb-like"></div><div class="fb-share-button" data-href="http://vender.virasorovirtual.com/articulos/{!! $articulo->url !!}" data-layout="button_count"></div><br>
             <span class="uk-text-muted uk-text-upper uk-text-small">Code: {!! $articulo->url !!}</span>
         </div>
         <div id="page_content_inner">

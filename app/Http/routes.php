@@ -32,3 +32,5 @@ Route::post('/perfil/{id}', 'PerfilController@update');
 Route::post('/buscar', 'ArticulosController@buscar');
 
 Route::get('/videoayuda', 'PerfilController@ayuda');
+
+Route::get('/{user}', 'PerfilController@showuser');

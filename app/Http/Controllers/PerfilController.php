@@ -86,6 +86,7 @@ class PerfilController extends Controller
 
         $user = User::find($id);
         if ($user) {
+          $user->name = $request->input('name','');
           $user->telefono = $request->input('telefono','');
           $user->facebook = $request->input('facebook','');
           $user->twitter = $request->input('twitter','');
@@ -113,6 +114,28 @@ class PerfilController extends Controller
         return view('layouts.ayuda');
 
     }
+
+    public function showuser($user)
+    {
+
+      $u = User::where('activo', 1)
+              ->where('name', $user)
+              ->first();
+      if (count($u)) {
+
+        $articulos = Articulo::where('activo', 1)
+                         ->orderBy('created_at', 'desc')
+                         ->paginate(20);
+        $title = "Articulos del vendedor: " . $u->name;
+        return view('home', ['articulos' => $articulos, 'title' => $title]);
+
+      }
+      echo "No se encontro el usuario";
+      return;
+
+
+    }
+
 
 
 }

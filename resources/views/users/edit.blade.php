@@ -70,6 +70,13 @@
               <ul>
                   <li>
                       <div class="md-list-content">
+                          <span class="uk-text-small uk-text-muted uk-display-block">Nombre</span>
+                          <input type="text" class="md-input" value='{!! $user->name !!}' id="name" name="name"/>
+                      </div>
+                  </li>
+
+                  <li>
+                      <div class="md-list-content">
                           <span class="uk-text-small uk-text-muted uk-display-block">Telefono</span>
                           <input type="text" class="md-input" value='{!! $user->telefono !!}' id="telefono" name="telefono"/>
                       </div>

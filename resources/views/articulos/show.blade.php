@@ -241,7 +241,7 @@ if (Auth::user()->telefono=="") {
                                         <i class="md-icon material-icons md-icon-light">&#xE5D4;</i>
                                         <div class="uk-dropdown uk-dropdown-flip uk-dropdown-small">
                                             <ul class="uk-nav">
-                                                <li><a href="#">Action 1</a></li>
+                                                <li><a href="/{{ App\User::find($articulo->users_id)->name }}">Sus articulos</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -249,7 +249,7 @@ if (Auth::user()->telefono=="") {
 
                                     </div>
                                     <div class="user_heading_content">
-                                        <h2 class="heading_b uk-margin-bottom"><span class="uk-text-truncate">Usuario: {{ App\User::find($articulo->users_id)->name }}</span><span class="sub-heading">Telefono: {{App\User::find($articulo->users_id)->telefono}}</span></h2>
+                                        <h2 class="heading_b uk-margin-bottom"><span class="uk-text-truncate">Usuario: {{ App\User::find($articulo->users_id)->name }}</span><a class="md-btn md-btn-success" href="/{{ App\User::find($articulo->users_id)->name }}">Ver todos sus productos</a><br><br><span class="sub-heading">Telefono: {{App\User::find($articulo->users_id)->telefono}}</span></h2><br>
                                         <ul class="user_stats">
                                             <li>
                                                 <h4 class="heading_a">{!! $cargados !!} <span class="sub-heading">Cargados</span></h4>

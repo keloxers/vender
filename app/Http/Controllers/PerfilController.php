@@ -124,15 +124,20 @@ class PerfilController extends Controller
       if (count($u)) {
 
         $articulos = Articulo::where('activo', 1)
+                         ->where('users_id', $u->id)
                          ->orderBy('created_at', 'desc')
                          ->paginate(20);
         $title = "Articulos del vendedor: " . $u->name;
-        return view('home', ['articulos' => $articulos, 'title' => $title]);
 
+
+      } else {
+        $articulos = Articulo::where('activo', 1)
+                         ->orderBy('created_at', 'desc')
+                         ->paginate(20);
+        $title = "Articulos destacados";
       }
-      echo "No se encontro el usuario";
-      return;
 
+      return view('home', ['articulos' => $articulos, 'title' => $title]);
 
     }
 

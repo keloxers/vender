@@ -53,33 +53,41 @@
 
                         <?php if (Auth::check()) { ?>
                         <li data-uk-dropdown="{mode:'click'}">
-                            <a href="/articulos" class="user_action_icon"><i class="material-icons md-24 md-light">&#xE85D;</i></a>
+                            <!-- <a href="/articulos" class="user_action_icon"><i class="material-icons md-24 md-light">&#xE85D;</i></a> -->
+                            <a href="/articulos" class="user_action_icon"> Listar</a>
                         </li>
 
                         <li data-uk-dropdown="{mode:'click'}">
-                            <a href="/articulos/create" class="user_action_icon"><i class="material-icons md-24 md-light">&#xE150;</i></a>
+                            <!-- <a href="/articulos/create" class="user_action_icon"><i class="material-icons md-24 md-light">&#xE150;</i></a> -->
+                            <a href="/articulos/create" class="user_action_icon"> Agregar</a>
                         </li>
 
 
                         <li data-uk-dropdown="{mode:'click'}">
-                            <a href="#" class="user_action_icon"><i class="material-icons md-24 md-light">&#xE7FD;</i></a>
+                          <a href="/perfil" class="user_action_icon"> Perfil</a>
+                            <!-- <a href="#" class="user_action_icon"><i class="material-icons md-24 md-light">&#xE7FD;</i></a>
                             <div class="uk-dropdown uk-dropdown-small uk-dropdown-flip">
                                 <ul class="uk-nav js-uk-prevent">
                                     <li><a href="/perfil">Perfil</a></li>
                                     <li><a href="/logout">Salir</a></li>
                                 </ul>
-                            </div>
+                            </div> -->
+
                         </li>
+                        <li data-uk-dropdown="{mode:'click'}">
+                          <a href="/logout" class="user_action_icon"> Salir</a>
+                        </li>
+
                         <?php } else { ?>
                           <li data-uk-dropdown="{mode:'click'}">
-
-                              <a href="#" class="user_action_icon"><i class="material-icons md-24 md-light">&#xE7FD;</i></a>
+                              <a href="/login" class="user_action_icon">Ingresar</a>
+                              <!-- <a href="#" class="user_action_icon"><i class="material-icons md-24 md-light">&#xE7FD;</i></a>
                               <div class="uk-dropdown uk-dropdown-small uk-dropdown-flip">
                                   <ul class="uk-nav js-uk-prevent">
                                       <li><a href="/login">Ingresar</a></li>
                                       <li><a href="/register">Registrarse</a></li>
                                   </ul>
-                              </div>
+                              </div> -->
                           </li>
                         <?php } ?>
                     </ul>
